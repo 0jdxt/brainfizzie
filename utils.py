@@ -73,7 +73,7 @@ def is_multi(loop: str) -> bool:
     # similar to copy loops but also allows
     # multiple + in any of the (>+) groups
 
-    # works since is_copy assumes 1*'+' in (>+) groups
+    # works since is_copy assumes single + in (>+) groups
     if not is_copy(loop):
         return False
 

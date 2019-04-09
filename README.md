@@ -1,4 +1,4 @@
-# brainfizzie
+# brainfizzy
 brainfuck interpreter written in python
 ___
 

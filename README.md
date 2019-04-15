@@ -6,3 +6,6 @@ ___
 ```bash
 $ ./interpreter.py programs/sierpinski.b
 ```
+
+## License
+MIT

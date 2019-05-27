@@ -247,7 +247,7 @@ def main(code_or_file, timeout):
         # else - if .bf or .b variants exists > set fname
         #        else > set code
         # prioritise .bf over .b
-        p = Path(code_or_file)
+        p = Path("programs", code_or_file)
         if p.exists():
             fname = p
         else:
@@ -269,7 +269,7 @@ def main(code_or_file, timeout):
     except NameError:
         pass
 
-    logger.debug(clean_code(code))
+    logger.debug(code)
     start = time.time()
     with Timeout(timeout or None):
         try:
@@ -281,4 +281,3 @@ def main(code_or_file, timeout):
 
 if __name__ == "__main__":
     main()
-
